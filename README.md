@@ -27,13 +27,9 @@ The project directory is organized as follows:
 ```
 Diet-Plan-Optimisation-using-PuLP/
 │
-├── data/
-│   └── food_data.csv              # Dataset containing nutritional information of various food items
+├── food_data.csv              # Dataset containing nutritional information of various food items
 │
 ├── diet_plan_optimization.py      # Main Python script for optimization
-│
-├── results/
-│   └── optimal_diet_plan.csv      # Output file containing the optimized diet plan
 │
 └── README.md                      # Project README file
 ```
@@ -62,7 +58,7 @@ pip install pulp pandas
 
 2. **Prepare the dataset:**
 
-   The `food_data.csv` file in the `data/` directory contains the nutritional information for various food items. Ensure that this file is present and correctly formatted.
+   The `diet.xls` file in the directory contains the nutritional information for various food items. Ensure that this file is present and correctly formatted.
 
 3. **Run the optimization script:**
 
@@ -71,10 +67,6 @@ pip install pulp pandas
    ```bash
    python diet_plan_optimization.py
    ```
-
-4. **View the results:**
-
-   The optimized diet plan will be saved in the `results/` directory as `optimal_diet_plan.csv`.
 
 ## Problem Statement
 
@@ -111,7 +103,7 @@ Each food item in the dataset has associated nutritional values and costs. The o
 
 ## Results
 
-The optimized diet plan is generated and saved in the `results/optimal_diet_plan.csv` file. This file contains the list of food items, their respective quantities, and the total cost of the diet plan.
+The optimized diet plan is generated. This plan contains the list of food items, their respective quantities, and the total cost of the diet plan.
 
 ## Conclusion
 
